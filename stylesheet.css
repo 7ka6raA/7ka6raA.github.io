@@ -1,0 +1,84 @@
+body{
+    background: -webkit-linear-gradient(to top, rgb(137, 184, 255), #c5ceff);
+  background: linear-gradient(to top, rgb(137, 184, 255), #c5ceff);
+    line-height: 1.8em;
+    font-family: 'メイリオ', Meiryo,sans-serif;
+    font-size: 1.05em;
+    letter-spacing: 0.5pt;
+}
+@media screen {
+    form {
+        max-width: 60%;
+        background-color:#e9e7da;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width: 800px) {
+    form {
+        max-width: 90%;
+        background-color: #e9e7da;
+        margin: 0 auto;
+    }
+}
+span{
+    color: white;
+    border: 1px solid red;
+    border-radius: 4px;
+    background-color: red;
+}
+
+.title{
+    padding: 1em;
+}
+.title {
+padding: 0.5em;
+color: black;
+background-color: wheat;
+border-bottom: solid 3px #524;
+}
+.description{
+    padding: 1em;
+}
+.target{
+    position: relative;
+    width: 80%;
+    margin: 1em 3%;
+}
+.base-info {
+    position: relative;
+    width: 80%;
+    margin: 1em 3%;
+}
+.textAns {
+    box-sizing: border-box;
+    width: 100%;
+    margin: 8px 0;
+    padding: 0.3em;
+    transition: 0.3s;
+    border: 1px solid #1b2538;
+    border-radius: 4px;
+    outline: none;
+}
+.base-info input:focus{
+    border-color: #da3c41;
+    outline: none;
+    box-shadow: 0 0 1px 1px;
+}
+.target input:focus{
+    border-color: #da3c41;
+    outline: none;
+    box-shadow: 0 0 1px 1px;
+}
+.target textarea:focus{
+    border-color: #da3c41;
+    outline: none;
+    box-shadow: 0 0 1px 1px;
+}
+
+.question{
+    padding: 0.25em 0.5em;
+    color:#494949;
+    background:transparent;
+    border-left: solid 5px #7db4e6;
+}
+

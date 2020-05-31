@@ -1,43 +1,71 @@
 
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="text/javascript" charset="UTF-8"></script>
     <title>テストアンケートフォーム</title>
+    <link rel="stylesheet" type="text/css" href="stylesheet.css" />
 </head>
 <body>
-    <form action="mailto:7k6rayn@gmail.com" method="GET" subject="アンケートフォーム送信テスト">
-        <p>名前　<span>必須</span></p>
-        姓<input type="text">名<input type="text">
-        <div id="target1"></p>Q1.今月の事業目標「<input type="text">」は達成できましたか？　<span>必須</span></p>
-            <input type="radio">達成できた<br>
-            <input type="radio">どちらかといえば達成できた<br>
-            <input type="radio">どちらともいえない<br>
-            <input type="radio">どちらかといえば達成できなかった<br>
-            <input type="radio">達成できなかった<br>
-            Q1でそう回答した理由を記入してください。<br>
-            <textarea name="coment-q1"></textarea>
+    <header>
+
+    </header>
+    <form action="" method="POST" subject="アンケートフォーム送信テスト">
+        <div class="title">
+            <h1>事業目標アンケート</h1>
         </div>
-        <div id="target2"></p>Q2.今月の事業目標「<input type="text">」は達成できましたか？　<span>必須</span></p>
-            <input type="radio">達成できた<br>
-            <input type="radio">どちらかといえば達成できた<br>
-            <input type="radio">どちらともいえない<br>
-            <input type="radio">どちらかといえば達成できなかった<br>
-            <input type="radio">達成できなかった<br>
-            Q2でそう回答した理由を記入してください。<br>
-            <textarea name="coment-q2"></textarea>
+        <div class="description">
+            <p>今月の事業目標に関するアンケートに回答し、◍月×日までに送信してください</p>
         </div>
-        <div id="target3"></p>Q2.今月の事業目標「<input type="text">」は達成できましたか？　<span>必須</span></p>
-            <input type="radio">達成できた<br>
-            <input type="radio">どちらかといえば達成できた<br>
-            <input type="radio">どちらともいえない<br>
-            <input type="radio">どちらかといえば達成できなかった<br>
-            <input type="radio">達成できなかった<br>
-            Q3でそう回答した理由を記入してください。<br>
-            <textarea name="coment-q3"></textarea>
+        <div class="base-info">
+            <label class="effect">
+                <div class="question" >社員番号　<span>必須</span><br></div>
+            <input class="textAns" type="text" placeholder="社員番号を記入してください">
+            </label>
+            <label class="effect">
+                <div class="question">氏名　<span>必須</span><br></div>
+            <input class="textAns" type="text" placeholder="漢字で記入してください">
+            </label>
         </div>
-        <p><input type="submit"　value="送信する"></p>
+        <br>
+        <div class="target">
+            <p class="question">Q1.創造への誓い「<input class="textAns" type="text">」は実践できましたか？　<span>必須</span></p>
+            <input type="radio">誓いの通り実践できた<br>
+            <input type="radio">ほぼ継続して実践できた<br>
+            <input type="radio">実践できない時もあるが意識して継続を続けている<br>
+            <input type="radio">どちらかといえば実践できなかった<br>
+            <input type="radio">実践の意欲は低下している<br>
+            <p class="question">Q1でそう回答した理由を記入してください。</p>
+            <textarea class="textAns" name="coment coment-q1"></textarea>
+        </div>
+        <br>
+        <div class="target">
+            <p class="question">Q2.創造への誓い「<input class="textAns" type="text">」は実践できましたか？　<span>必須</span></p>
+            <input type="radio">誓いの通り実践できた<br>
+            <input type="radio">ほぼ継続して実践できた<br>
+            <input type="radio">実践できない時もあるが意識して継続を続けている<br>
+            <input type="radio">どちらかといえば実践できなかった<br>
+            <input type="radio">実践の意欲は低下している<br>
+            <p class="question">Q2でそう回答した理由を記入してください。</p>
+            <textarea class="textAns" name="coment coment-q2"></textarea>
+        </div>
+        <br>
+        <div class="target">
+            <p class="question">Q3.創造への誓い「<input class="textAns" type="text">」は実践できましたか？　<span>必須</span></p>
+            <input type="radio">誓いの通り実践できた<br>
+            <input type="radio">ほぼ継続して実践できた<br>
+            <input type="radio">実践できない時もあるが意識して継続を続けている<br>
+            <input type="radio">どちらかといえば実践できなかった<br>
+            <input type="radio">実践の意欲は低下している<br>
+            <p class="question">Q3でそう回答した理由を記入してください。</p>
+            <textarea class="textAns" name="coment coment-q3"></textarea>
+        </div>
+        <p><input type="submit" value="送信する"></p>
+        <footer>
+            
+        </footer>
     </form>
 </body>
 </html>
